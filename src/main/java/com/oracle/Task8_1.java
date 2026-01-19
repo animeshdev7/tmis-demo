@@ -18,14 +18,14 @@ public class Task8_1 {
 		CamelContext context = new DefaultCamelContext();
 		MQConnectionFactory mqCF = new MQConnectionFactory();
 
-		mqCF.setHostName("localhost");
-		mqCF.setPort(1414);
-		mqCF.setQueueManager("QM1");
-		mqCF.setChannel("DEV.APP.SVRCONN");
+		mqCF.setHostName("");
+		mqCF.setPort();
+		mqCF.setQueueManager("");
+		mqCF.setChannel("");
 		mqCF.setTransportType(WMQConstants.WMQ_CM_CLIENT);
 
-		mqCF.setStringProperty(WMQConstants.USERID, "oracleadmin");
-		mqCF.setStringProperty(WMQConstants.PASSWORD, "admin@OracleDev");
+		mqCF.setStringProperty(WMQConstants.USERID, "");
+		mqCF.setStringProperty(WMQConstants.PASSWORD, "");
 		mqCF.setBooleanProperty(WMQConstants.USER_AUTHENTICATION_MQCSP, true);
 
 		context.addComponent("jms", JmsComponent.jmsComponentAutoAcknowledge(mqCF));

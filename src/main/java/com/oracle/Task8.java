@@ -20,10 +20,10 @@ public class Task8 {
 		
 		MessageProcessor messageProcessor = new MessageProcessor();
 		BasicDataSource ds = new BasicDataSource();
-		ds.setDriverClassName("oracle.jdbc.OracleDriver");
-		ds.setUrl("jdbc:oracle:thin:@localhost:1521:FREE");
-		ds.setUsername("SYSTEM");
-		ds.setPassword("1149135198Dev");
+		ds.setDriverClassName("");
+		ds.setUrl("");
+		ds.setUsername("");
+		ds.setPassword("");
 
 		JdbcComponent jdbcComponent = new JdbcComponent();
 		jdbcComponent.setDataSource(ds);
